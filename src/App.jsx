@@ -1,20 +1,44 @@
-import React from 'react';
-import useCustomHooks from './CustomHook';
+import React from 'react'
+import Nav from './Nav';
+import Card from './Card';
+import Employee from './Employee';
+import { BrowserRouter } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
+import Signup from './Signup';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
+import Class from './Class';
+import States from './States';
+import Event from './Event';
+import Effect from './Effect';
+import Hooks from './Hooks';
+import useHook from './CustomHook'
 
 
-function App(){
-
-    const H = useCustomHooks()
-    const H1 = useCustomHooks()
+const App =() =>{
+    const H = useHook()
+    const H1 = useHook()
 
     return(
         <>
-        <h1>the count is { H.count }</h1>
-        <button onClick={H.increment}>incriment</button>
-        <h1>the count is { H1.count }</h1>
-        <button onClick={H1.increment}>incriment</button>
+        <BrowserRouter>
+            <h1>this is count : {H.count}</h1>
+            <h1>this is count : {H1.count}</h1>
+            <button onClick={H.increment}>click</button>
+            <button onClick={H1.increment}>click</button>
+            <Nav />
+            <Hooks />
+            <Effect />
+            <Event />
+            <Class />
+            <States />
+            <Switch>
+                <Route exact path='/' component={Employee} />
+                <Route path='/card' component={Card} />
+                <Route path='/signup' component={Signup} />
+            </Switch>
+        </BrowserRouter>
         </>
     )
 }
-
 export default App
