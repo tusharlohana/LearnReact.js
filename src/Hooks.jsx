@@ -29,7 +29,7 @@ const Hooks =()=>{
         }
         
         const decriment =()=>{
-            setCount1(count1 - 1 )
+            setCount1(count1 + 1 )
         }
 
         useEffect( 
@@ -44,8 +44,8 @@ const Hooks =()=>{
         
         <h1>the count is { count }</h1>
         <h1>the count is { count1 }</h1>
-        <button onClick={incriment}>incriment</button>
-        <button onClick={decriment}>decriment</button>
+        <button className="btn btn-success m-1" onClick={incriment}>incriment</button>
+        <button className="btn btn-primary m-1" onClick={decriment}>decriment</button>
         
         </>
     )

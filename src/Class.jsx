@@ -5,7 +5,7 @@ const Hook = ()=>{
 
      const name = nameVariable[0];
        
-     const setName = nameVariable[1]
+    //  const setName = nameVariable[1]
 
     //  setName("rahul")
 
