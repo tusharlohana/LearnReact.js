@@ -12,8 +12,8 @@ import States from './States';
 import Event from './Event';
 import Effect from './Effect';
 import Hooks from './Hooks';
-import useHook from './CustomHook'
-
+import useHook from './CustomHook';
+import MyFun from './Promise'
 
 const App =() =>{
     const H = useHook()
@@ -27,6 +27,7 @@ const App =() =>{
             <button onClick={H.increment}>click</button>
             <button onClick={H1.increment}>click</button>
             <Nav />
+            <MyFun />
             <Hooks />
             <Effect />
             <Event />
