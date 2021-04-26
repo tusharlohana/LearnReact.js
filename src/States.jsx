@@ -13,7 +13,7 @@ class Hi extends Component {
        componentDidMount(){
            this.int = setInterval(() => this.time() , 1000)
        }
-       componentDidUnmount(){
+       componentWillUnmount(){
            clearInterval(this.int)
        }
        time(){
