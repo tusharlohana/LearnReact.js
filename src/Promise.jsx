@@ -1,29 +1,29 @@
-import React from 'react';
 
-// promise : 
-//     resolve 
-//     reject
-//     pending
+// promise :
+//     - resolve
+//     - pending
+//     - reject
 
+function MyFun(){
+    return new Promise(function(resolve , reject){
+        setTimeout(()=>{
+            const error = false;
+            if (!error){
+            console.log("promise resolved")
+                resolve('resolveeeeeeeeeee')
+        }
+        else
+        {
+            console.log("promise not resolved")
+            reject('sorryyy')
+        }
+        }, 2000)
+    })
+}
+MyFun().then(function(error){
+    console.log("thanxxxx for resolving" +error)
+}).catch(function(error){
+    console.log("not thanxxxx" +error)
+})
 
-// function myFun() {
-//     return new Promise(function (resolve, reject) {
-//         setTimeout(() => {
-//             const error = true;
-//             if (!error) {
-//                 console.log("promise resolved")
-//                 resolve();
-//             }
-//             else
-//                 console.log("not resolved");
-//             reject('sorry')
-//         }, 2000)
-//     })
-// }
-
-// myFun().then(function(){
-//     console.log("thanxxxxx")
-// }).catch(function(){
-//     console.log("very badddddd")
-// })
-
+export default MyFun
