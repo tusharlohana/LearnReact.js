@@ -13,21 +13,23 @@ import Event from './Event';
 import Effect from './Effect';
 import Hooks from './Hooks';
 import useHook from './CustomHook';
-import MyFun from './Promise'
+import Pro from './Promise';
+import Conditionals from './Conditionals'
 
-const App =() =>{
-    const H = useHook()
-    const H1 = useHook()
+const App = () => {
+    // const H = useHook()
+    // const H1 = useHook()
 
-    return(
+    return (
         <>
-        <BrowserRouter>
+    <Conditionals/>
+            {/* <BrowserRouter>
             <h1>this is count : {H.count}</h1>
             <h1>this is count : {H1.count}</h1>
             <button onClick={H.increment}>click</button>
             <button onClick={H1.increment}>click</button>
             <Nav />
-            <MyFun />
+            <Pro />
             <Hooks />
             <Effect />
             <Event />
@@ -38,7 +40,7 @@ const App =() =>{
                 <Route path='/card' component={Card} />
                 <Route path='/signup' component={Signup} />
             </Switch>
-        </BrowserRouter>
+        </BrowserRouter> */}
         </>
     )
 }
