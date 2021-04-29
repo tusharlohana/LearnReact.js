@@ -17,12 +17,12 @@ import MyFun from './Promise'
 import Conditionals from './Conditionals'
 
 const App = () => {
-    // const H = useHook()
-    // const H1 = useHook()
+    const H = useHook()
+    const H1 = useHook()
     return (
         <>
     <Conditionals/>
-            {/* <BrowserRouter>
+            <BrowserRouter>
             <h1>this is count : {H.count}</h1>
             <h1>this is count : {H1.count}</h1>
             <button onClick={H.increment}>click</button>
@@ -39,7 +39,7 @@ const App = () => {
                 <Route path='/card' component={Card} />
                 <Route path='/signup' component={Signup} />
             </Switch>
-        </BrowserRouter> */}
+        </BrowserRouter>
         </>
     )
 }
