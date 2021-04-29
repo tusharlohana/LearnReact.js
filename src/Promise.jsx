@@ -1,7 +1,11 @@
-import React from 'react';
 
-function Pro() {
-    return new Promise( function (resolve, reject){
+// promise :
+//     - resolve
+//     - pending
+//     - reject
+
+function MyFun(){
+    return new Promise(function(resolve , reject){
         setTimeout(()=>{
             const error = false;
             if (!error){
@@ -16,10 +20,10 @@ function Pro() {
         }, 2000)
     })
 }
-Pro().then(function(error){
+MyFun().then(function(error){
     console.log("thanxxxx for resolving" +error)
 }).catch(function(error){
     console.log("not thanxxxx" +error)
 })
 
-export default Pro
+export default MyFun

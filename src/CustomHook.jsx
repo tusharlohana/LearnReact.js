@@ -1,3 +1,5 @@
+// custome hook fn
+
 import { useState } from 'react';
 
 const useHook = () =>{
@@ -10,5 +12,4 @@ const useHook = () =>{
         count , increment
     }
 }
-
 export default useHook

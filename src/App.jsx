@@ -13,13 +13,12 @@ import Event from './Event';
 import Effect from './Effect';
 import Hooks from './Hooks';
 import useHook from './CustomHook';
-import Pro from './Promise';
+import MyFun from './Promise'
 import Conditionals from './Conditionals'
 
 const App = () => {
     // const H = useHook()
     // const H1 = useHook()
-
     return (
         <>
     <Conditionals/>
@@ -29,7 +28,7 @@ const App = () => {
             <button onClick={H.increment}>click</button>
             <button onClick={H1.increment}>click</button>
             <Nav />
-            <Pro />
+            <MyFun />
             <Hooks />
             <Effect />
             <Event />
