@@ -1,23 +1,24 @@
 import React from 'react'
-import Nav from './Nav';
-import Card from './Card';
-import Employee from './Employee';
-import { BrowserRouter } from 'react-router-dom';
-import { Route, Switch } from 'react-router-dom';
-import Signup from './Signup';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import './index.css';
-import Class from './Class';
-import States from './States';
-import Event from './Event';
-import Effect from './Effect';
-import Hooks from './Hooks';
-import useHook from './CustomHook';
+// import Nav from './Nav';
+// import Card from './Card';
+// import Employee from './Employee';
+// import { BrowserRouter } from 'react-router-dom';
+// import { Route, Switch } from 'react-router-dom';
+// import Signup from './Signup';
+// import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+// import './index.css';
+// import Class from './Class';
+// import States from './States';
+// import Event from './Event';
+// import Effect from './Effect';
+// import Hooks from './Hooks';
+// import useHook from './CustomHook';
 // import MyFun from './Promise'
-import Conditionals from './Conditionals'
-import List from './List'
+// import Conditionals from './Conditionals'
+// import List from './List'
+import Forms from './Forms'
 
-const arrValue = [10,20,30,40,50,5,5,5,510,50,4,4,4,40,54,0,4,654]
+
 
 const App = () => {
     // const H = useHook()
@@ -25,7 +26,8 @@ const App = () => {
     return (
         <>
     {/* <Conditionals/> */}
-        <List num={arrValue} />
+        {/* <List /> */}
+        <Forms />
             {/* <BrowserRouter>
             <h1>this is count : {H.count}</h1>
             <h1>this is count : {H1.count}</h1>

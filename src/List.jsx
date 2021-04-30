@@ -2,16 +2,17 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 const arr = [{id : 101 , name : "tushar"},
-            { id : 102 , name : " ritik"}]
+            { id : 102 , name : " ritik"},
+            {id : 103 , name : "ayushi"}]
 
-const newArr = arr.map((num) => {
-    console.log("num is:" , num)
-    return <li key={arr.id} >{num * 20}</li>
+const newArr = arr.map((e) => {
+    // console.log("num is:" , num)
+    return <li key={e.id} >user name is : {e.name}</li>
 })
 
 export const List = () => {
-    console.log("oldarr :" , arr)
-    console.log("newarray :", newArr)
+    // console.log("oldarr :" , arr)
+    // console.log("newarray :", newArr)
     return (
         <div>
             <ul>
