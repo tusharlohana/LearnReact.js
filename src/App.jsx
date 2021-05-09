@@ -26,7 +26,8 @@ const App = () => {
     return (
         <>
     {/* <Conditionals/> */}
-        {/* <List /> */}
+        {/* <List />
+         */}
         <Forms />
             {/* <BrowserRouter>
             <h1>this is count : {H.count}</h1>
