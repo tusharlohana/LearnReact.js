@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import './index.css';
+// import './index.css';
 
 const Task = () => {
     let [timer, setTimer] = useState(0);

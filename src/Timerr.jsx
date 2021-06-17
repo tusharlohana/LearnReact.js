@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import Nav from './Nav';
-import './index.css'
+// import './index.css'
 
 
 
@@ -12,7 +12,7 @@ export const Timerr = (props) => {
 
     const submitValue =()=>{
 
-    axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=658767b0ae936b022f59a69f44868419&units=metric`)
+    axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=a733bfe492ec2b8815b7f3d512e7e26b`)
     .then(function (response) {
         // handle success
         setCityData(response.data)
@@ -25,7 +25,8 @@ export const Timerr = (props) => {
     })
     .then(function () {
         // always executed
-    });}
+    });
+}
 
     useEffect(() => {
         // Make a request for a user with a given ID
