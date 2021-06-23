@@ -8,14 +8,26 @@ import { Timerr } from './Timerr';
 import './index.css';
 import Userinfo from './axiosExample/Userinfo';
 import Todo from './Todolist/Todo';
+import { EmpNav } from './EmployeeDetails/EmpNav';
+import Employee from './EmployeeDetails/Employee';
+import EmployeeForm from './EmployeeDetails/EmployeeForm';
 
 
 const App = () => {
     //    const history = useHistory()
     return (
         <>
-        {/* <Todo/> */}
-            <Userinfo />
+            <BrowserRouter>
+            <EmpNav />
+                <Switch>
+                    <Route exact path="/" component={Employee}></Route>
+                    <Route exact path="/employeeform" component={EmployeeForm}></Route>
+                </Switch>
+
+            </BrowserRouter>
+
+            {/* <Todo/> */}
+            {/* <Userinfo /> */}
             {/* <RCounter /> */}
             {/* <Timerr></Timerr> */}
             {/* <BrowserRouter>
