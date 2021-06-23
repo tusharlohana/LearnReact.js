@@ -6,14 +6,17 @@ import RCounter from './RCounter';
 import Task from './Task';
 import { Timerr } from './Timerr';
 import './index.css';
+import Userinfo from './axiosExample/Userinfo';
+import Todo from './Todolist/Todo';
 
 
 const App = () => {
     //    const history = useHistory()
     return (
         <>
-
-            <RCounter />
+        {/* <Todo/> */}
+            <Userinfo />
+            {/* <RCounter /> */}
             {/* <Timerr></Timerr> */}
             {/* <BrowserRouter>
         <Link to = {'/'}> Task  </Link>
